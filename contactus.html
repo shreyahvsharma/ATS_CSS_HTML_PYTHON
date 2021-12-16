@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Automatic Text Summarizer</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="login.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+        
+        <style>
+            body {background-color:  white; font-family: 'Montserrat', sans-serif;}
+            h1   {color: blue;}
+            p    {color: red;}
+        
+        </style>
+
+
+    </head>
+    <body class = "home-body" background="assests/loginbg.jpeg">
+        <div style="background-color: #ff6600; padding: 20px; ">
+            <a href="loader.html" class="logo" style="float: left; color: black; font-weight: bold; text-decoration: none; "> HOME</a> 
+            <div style="background-color: #ff6600" class = "links-heading" align="right">
+                 <a style="color: black; font-weight: bold; padding-right: 20px; text-decoration: none; " class="active" href="home.html"  > SUMMARIZER</a>  
+                 <a style="color: black; font-weight: bold; text-decoration: none; " href="#" >CONTACT US</a>  
+            </div>
+        </div>
+        
+        <div>
+        </div>
+
+        <div class = "main-text">
+            <h1 style="color:#ff6600; text-align: center; font-size: 45px; "id="main-text-h1"> Contact Us</h1>  
+        </div>
+       
+        <div style="display: flex;  justify-content: center; align-items: center; padding-right: 20px; ">
+            <div style="border-radius: 5px; background-color: #fff0e6; padding: 20px;">
+            
+                <!--CONTACT US FORM -->
+                <form action="action_page.php">
+
+                    <label style=" font-weight: bolder; color: #ff6600 " for="fname">First Name *</label>
+                    <input style=" width: 100%; padding: 12px; border: 1px solid #fff0e6;  border-radius: 4px;  box-sizing: border-box;   margin-top: 6px;  margin-bottom: 16px;   resize: vertical  " type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+                
+                    <label style=" font-weight: bolder; color: #ff6600 " for="lname">Last Name * </label>
+                    <input style="
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #fff0e6; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+ "type="text" id="lname" name="lastname" placeholder="Your last name.." >
+ 
+                    <label style=" font-weight: bolder; color: #ff6600 " for="email">Email * </label>
+                    <input style="
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #fff0e6; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+ "type="email" id="lname" name="lastname" placeholder="name@email.com" required pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
+[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
+                
+                    <label style=" font-weight: bolder; color: #ff6600 " for="country">Region * </label>
+                    <select style="
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #fff0e6; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+ "id="country" name="country">
+                      <option value="north">North India</option>
+                      <option value="south">South India</option>
+                      <option value="west">West India</option>
+                      <option value="east">East India</option>
+                      <option value="center">Central India</option>
+                      <option value="outside">Outside India</option>
+                    </select>
+                
+                    <label style=" font-weight: bolder; color: #ff6600 " for="subject">Subject * </label>
+                    <textarea style="
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #fff0e6; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+ "id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input style="background-color: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;" type="submit" value="Submit">
+
+                </form>
+            </div>
+            <div style="background-color: blue;">
+                
+            </div>
+        </div> 
+    </body>
+    
+</html>
+       

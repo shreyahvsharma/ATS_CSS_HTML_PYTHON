@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Automatic Text Summarizer</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="login.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+        
+        <style>
+            body {background-color:  white; font-family: 'Montserrat', sans-serif;}
+            h1   {color: blue;}
+            p    {color: red;}
+        
+        </style>
+
+
+    </head>
+    <body class = "home-body" background="assests/loginbg.jpeg">
+        <div style="background-color: #ff6600; padding: 20px; ">
+            <a href="loader.html" class="logo" style="float: left; color: white; font-weight: bold; text-decoration: none; "> HOME</a> 
+            <div style="background-color: #ff6600" class = "links-heading" align="right">
+                 <a style="color: white; font-weight: bold ; padding-right: 20px; text-decoration: none; " href="#"  > SUMMARIZER</a>  
+                 <a style="color: white ; font-weight: bold; text-decoration: none; " href="contactus.html" >CONTACT US</a>  
+            </div>
+        </div>
+        
+        <div>
+        </div>
+
+        <div class = "main-text">
+            <h1 style="color:#ff6600; text-align: center; font-size: 45px; "id="main-text-h1"> TEXT SUMMARIZER</h1>  
+        </div>
+       
+        <div style="display: flex;  
+        justify-content: center;  
+        align-items: center; padding-right: 20px; ">
+            <br>
+            <br>
+
+            <div style= "padding:40px; margin-top: -35px;"><form action ="external/" method ="post", name="script">
+                {% csrf_token %}
+                <h2 
+                style="color: green; 
+                
+                ">Using Term Frequency:</h2> 
+                <input type ="text" name ="param" required><br>
+                <!-- {{data_external}} -->
+                <br>
+               <h4>{{data1}}</h4> 
+                <br>
+                
+               <input style="background-color: #ff6600;
+               color: white;
+               padding: 12px 20px;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer" type= "submit" value="Summarize">
+             </form><br><br>
+            </div>
+          
+            <div style= "padding: 40px; margin-top: -35px;"><form action ="external1/" method ="post", name="script1">
+                {% csrf_token %} 
+                <h2 
+                style="color:Green; 
+                
+                ">Using Centrality:</h2> 
+                 
+                <input type ="text" name ="param1" required><br>
+                <!-- {{data_external}}<br> -->
+                {{data2}}
+                <br>
+                <br>
+            
+                <br>
+                <input style="background-color: #ff6600;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer" type= "submit" value="Summarize">
+    
+            </form><br><br>
+        </div>
+    
+        <div style= "padding:40px; margin-top: -65px;"> <form action ="external2/" method ="post", name="script2">
+                {% csrf_token %}
+                <h2 
+                style="color:Green; 
+                
+                ">Using Power Method</h2> 
+                <input type ="text" name ="param2" required><br>
+                <!-- {{data_external}}<br> -->
+                {{data3}}
+                <br>
+                <br>
+                <br>
+                
+                <input style="background-color: #ff6600;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer" type= "submit" value="Summarize">
+            </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
